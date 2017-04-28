@@ -1,0 +1,23 @@
+{
+  "name": "holiday-requests",
+  "version": "1.0.0",
+  "description": "express and react front end for holiday requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -w --recursive",
+    "express": "nodemon express/server.js"
+  },
+  "author": "Jon Hunter",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}
