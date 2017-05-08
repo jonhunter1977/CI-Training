@@ -11,6 +11,8 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
 test:
+  pre:
+    - npm run static-analysis
   override:
     - yarn test
 deployment:

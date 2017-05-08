@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive",
+    "static-analysis": "./node_modules/jshint/bin/jshint .",
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js",
     "build": "echo \"doing build stuff\""
@@ -18,6 +19,7 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "jshint": "^2.9.4",
     "mocha": "^3.3.0",
     "should": "^11.2.1",
     "supertest": "^3.0.0"
