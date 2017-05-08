@@ -8,7 +8,7 @@
     "static-analysis": "./node_modules/jshint/bin/jshint .",
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js",
-    "build": ". deploy/build.sh $CIRCLE_SHA1"
+    "build": ". deploy/build.sh"
   },
   "author": "Jon Hunter",
   "license": "ISC",
