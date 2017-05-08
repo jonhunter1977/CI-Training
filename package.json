@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive",
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
-    "express": "nodemon express/server.js"
+    "express": "nodemon express/server.js",
+    "build": "echo \"doing build stuff\""
   },
   "author": "Jon Hunter",
   "license": "ISC",
