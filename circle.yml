@@ -5,6 +5,8 @@ machine:
     version: 6.10.2
   environment:
     PATH: "${PATH}:${HOME}/${HR-REACT}/node_modules/.bin"
+  services:
+    - docker
 dependencies:
   override:
     - yarn
