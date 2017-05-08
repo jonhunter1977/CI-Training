@@ -4,7 +4,8 @@
   "description": "express and react front end for holiday requests",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -w --recursive",
+    "test": "./node_modules/mocha/bin/mocha --recursive",
+    "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js"
   },
   "author": "Jon Hunter",
