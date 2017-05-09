@@ -13,7 +13,7 @@ describe('POST /login', () => {
   it('should respond with a 400 if the POST data is missing', (done) => {
     request(app)
       .post('/login')
-      .expect(400)
+      .expect(401)
       .end(done);
   });
 
