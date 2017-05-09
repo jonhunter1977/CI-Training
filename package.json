@@ -1,6 +1,6 @@
 {
   "name": "holiday-requests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "express and react front end for holiday requests",
   "main": "server.js",
   "scripts": {
