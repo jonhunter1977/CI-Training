@@ -1,2 +1,1 @@
-# HR-React
-# HR-React
+# Sample code for CI training course
