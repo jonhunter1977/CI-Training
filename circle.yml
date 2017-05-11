@@ -22,10 +22,6 @@ deployment:
     branch: master
     commands:
       - "npm run build"
-#   develop:
-#     branch: develop
-#     commands:
-#       - "grunt circle:qa"
 # notify:
 #   webhooks:
 #     - url: http://webhooks.laterooms.com/webhooks/circleci
