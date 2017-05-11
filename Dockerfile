@@ -3,7 +3,7 @@ MAINTAINER jonhunter1977@gmail.com
 
 # Create app directory
 RUN mkdir -p /opt/ci-training
-WORKDIR /opt/hr-react
+WORKDIR /opt/ci-training
 
 # Install app dependencies
 COPY package.json /opt/ci-training/
