@@ -12,7 +12,7 @@ RUN yarn install --production
 
 # Bundle app source
 COPY express /opt/ci-training/express
-COPY react /opt/ci-training/react
+COPY www /opt/ci-training/www
 
 # Expose the express application port
 EXPOSE 4001
