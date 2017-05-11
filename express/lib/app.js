@@ -14,7 +14,7 @@ const app = express();
 app.use(logger);
 
 //serve static files (react stuff)
-app.use(express.static('react'));
+app.use(express.static('www'));
 
 //routes
 app.use('/login', routes.login);
