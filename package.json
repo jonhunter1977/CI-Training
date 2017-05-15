@@ -1,14 +1,16 @@
 {
-  "name": "holiday-requests",
+  "name": "CI-Training",
   "version": "1.0.1",
-  "description": "express and react front end for holiday requests",
+  "description": "Sample code for training course",
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive",
     "static-analysis": "./node_modules/jshint/bin/jshint .",
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js",
-    "build": ". deploy/build.sh"
+    "build": ". deploy/build.sh",
+    "run-coverage": "./node_modules/istanbul/lib/cli.js cover  --root ./express/ ./node_modules/mocha/bin/_mocha -- --recursive",
+    "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage --statements 95 --functions 95 --branches 95 --lines 95"
   },
   "author": "Jon Hunter",
   "license": "ISC",
@@ -19,10 +21,11 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "jshint": "^2.9.4",
     "mocha": "^3.3.0",
     "should": "^11.2.1",
     "supertest": "^3.0.0"
   },
-  "repository": "git@github.com:jonhunter1977/HR-React.git"
+  "repository": "git@github.com:jonhunter1977/CI-Training.git"
 }

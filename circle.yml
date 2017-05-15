@@ -15,6 +15,8 @@ dependencies:
 test:
   pre:
     - npm run static-analysis
+    - npm run run-coverage
+    - npm run check-coverage
   override:
     - yarn test
 deployment:
