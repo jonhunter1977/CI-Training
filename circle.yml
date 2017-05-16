@@ -4,7 +4,7 @@ machine:
   node:
     version: 6.10.2
   environment:
-    PATH: "${PATH}:${HOME}/${HR-REACT}/node_modules/.bin"
+    PATH: "${PATH}:${HOME}/${CI-Training}/node_modules/.bin"
   services:
     - docker
 dependencies:
@@ -16,16 +16,14 @@ test:
   pre:
     - npm run static-analysis
   override:
-    - yarn test
+    - npm run test-and-cover
+  post:
+    - npm run check-coverage
 deployment:
   master:
     branch: master
     commands:
       - "npm run build"
-#   develop:
-#     branch: develop
-#     commands:
-#       - "grunt circle:qa"
 # notify:
 #   webhooks:
 #     - url: http://webhooks.laterooms.com/webhooks/circleci
