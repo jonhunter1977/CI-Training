@@ -1,6 +1,6 @@
 instrumentation:
     root: ./express
-    excludes: ['server.js', 'helpers/routeError.js']
+    excludes: ['server.js', 'helpers/routeError.js', 'middleware/logger.js']
     include-all-sources: true
 reporting:
     print: summary
