@@ -16,16 +16,14 @@ test:
   pre:
     - npm run static-analysis
   override:
-    - yarn test
+    - npm run test-and-cover
+  post:
+    - npm run check-coverage
 deployment:
   master:
     branch: master
     commands:
       - "npm run build"
-#   develop:
-#     branch: develop
-#     commands:
-#       - "grunt circle:qa"
 # notify:
 #   webhooks:
 #     - url: http://webhooks.laterooms.com/webhooks/circleci
