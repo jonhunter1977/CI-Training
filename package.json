@@ -9,8 +9,8 @@
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js",
     "build": ". deploy/build.sh",
-    "test-and-cover": "./node_modules/istanbul/lib/cli.js cover  --root ./express/ ./node_modules/mocha/bin/_mocha -- --recursive",
-    "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage --statements 95 --functions 95 --branches 95 --lines 95"
+    "test-and-cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --recursive",
+    "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage"
   },
   "author": "Jon Hunter",
   "license": "ISC",
