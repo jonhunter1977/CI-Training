@@ -9,6 +9,7 @@
     "dev-testing": "./node_modules/mocha/bin/mocha -w --recursive",
     "express": "nodemon express/server.js",
     "build": ". deploy/build.sh",
+    "deploy": ". deploy/deploy-aws.sh",
     "test-and-cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --recursive",
     "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage"
   },
