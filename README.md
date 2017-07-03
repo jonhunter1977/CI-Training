@@ -47,7 +47,7 @@ git clone git@github.com:jonhunter1977/CI-Training.git
 
 ## Node Project Management.
 
-Install dependencies:
+Navigate to project folder (where you cloned to) and install dependencies:
 ```
 npm install
 ```
