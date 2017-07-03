@@ -15,7 +15,7 @@ deploy_cluster() {
 
     make_task_def
     register_definition
-    task_id=aws ecs list-tasks --cluster ci-training-cluster | $JQ ".taskArns[0]"
+    task_id=$(aws ecs list-tasks --cluster ci-training-cluster | $JQ ".taskArns[0])"
     aws ecs stop-task --cluster ci-training-cluster --task $task_id
     aws ecs update-service --cluster ci-training-cluster --service ci-training-service --task-definition $revision
     return 0;
