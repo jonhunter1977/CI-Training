@@ -15,6 +15,8 @@ deploy_cluster() {
 
     make_task_def
     register_definition
+    aws ecs list-tasks --cluster ci-training-cluster
+    aws ecs stop-task --cluster ci-training-cluster --task 319f55b6-5738-4866-bb6c-b6131f3a7432
     aws ecs update-service --cluster ci-training-cluster --service ci-training-service --task-definition $revision
     return 0;
     # if [[ $(aws ecs update-service --cluster ci-training-cluster --service ci-training-service --task-definition $revision | \
