@@ -42,7 +42,7 @@ make_task_def(){
 	task_template='[
 		{
 			"name": "ci-training",
-			"image": "registry.hub.docker.com/jonhunter-1977/ci-training",
+			"image": "registry.hub.docker.com/jonhunter1977/ci-training",
 			"essential": true,
 			"memory": 200,
 			"cpu": 10,
